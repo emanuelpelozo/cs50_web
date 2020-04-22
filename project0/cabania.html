@@ -2,9 +2,20 @@
 <html>
     <head>
         <title>My Web Page!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
 
+          @media (max-width: 599px) {
+            .imagen-muestra{
+              height: 250px;
+            }
+          }
+          @media (min-width: 600px) {
+            .imagen-muestra{
+              width: 100%;
+            }
+          }
           body {
             background-color: #ffffcc;
           }
@@ -13,9 +24,14 @@
             border-radius: 20px 40px;
           }
 
-          .imagen-miniatura{
+          .imagen-muestra{
             border-radius: 15px;
           }
+
+          .row > div {
+            margin-bottom: 15px;
+          }
+
 
 
         </style>
@@ -25,12 +41,13 @@
       <nav class="navbar navbar-dark bg-dark" style="background-color:  #0099cc">
         <a href="index.html">Home</a>
       </nav>
+
       <div class ="container">
         <div class="row" style="padding-top: 10px">
-          <div class="col-md-5">
+          <div class="col-12 col-md-7">
             <img src="images/cabania-general.jpg" class="cabania-general img-fluid">
           </div>
-          <div class="col-md-7">
+          <div class="col-12 col-md-5">
             <h2 class="featurette-heading">La Cabaña.</h2>
             <p class="">Esta cabaña, es un ejemplo típico de las construcciones rústicas de la isla. Hecha completamente en madera y estando elevada de la superficie para evitar daños en época de sudestadas, goza de un gran estilo.
               Se encuentra llena de pequeños detalles de decoración que nos reconfortan la estadía.</p>
@@ -43,60 +60,58 @@
     <div class ="container">
       <h2> Zonas </h2>
       <p>Estas son las diferentes zonas en las que he categorizado la cabaña, teniendo en cuenta el interior y la parte exterior más allegada a la misma.</p>
-      <div class="row justify-content-center">
 
-        <div class="col-5">
-          <h3>Interior:</h3>
-          <ul>
-            <li>Habitación</li>
-            <li>Cocina</li>
-            <li>Living</li>
-          </ul>
+      <h3>Interior:</h3>
+      <ul>
+        <li>Habitación</li>
+        <li>Cocina</li>
+        <li>Living</li>
+      </ul>
 
+      <div class="row text-center">
+        <div class= "col-12 col-md-6">
+          <img src="images/living.jpg" class="imagen-muestra">
         </div>
-        <div class="col-5">
-           <h3>Exterior:</h3>
-           <ul>
-             <li>Zona de descanso</li>
-             <li>Zona para comer</li>
-             <li>Zona de salvavidas</li>
-           </ul>
 
+        <div class= "col-12 col-md-6">
+          <img src="images/cocina1.jpg" class="imagen-muestra">
+        </div>
+        <div class= "col-12 col-md-6">
+          <img src="images/cocina2.jpg" class="imagen-muestra">
+        </div>
+        <div class= "col-12 col-md-6">
+          <img src="images/habitacion1.jpg" class="imagen-muestra">
+        </div>
+      </div>
+      <h3>Exterior:</h3>
+      <ul>
+        <li>Zona de descanso</li>
+        <li>Zona para comer</li>
+        <li>Zona de salvavidas</li>
+      </ul>
+
+      <div class="row text-center">
+        <div class= "col-12 col-lg-6">
+          <img src="images/terraza1.jpg" class="imagen-muestra">
+        </div>
+
+        <div class= "col-12 col-lg-6">
+          <img src="images/terraza2.jpg" class="imagen-muestra">
+        </div>
+        <div class= "col-12 col-lg-6">
+          <img src="images/descanso1.jpg" class="imagen-muestra">
+        </div>
+        <div class= "col-12 col-lg-6">
+          <img src="images/salvavidas.jpg" class="imagen-muestra">
         </div>
       </div>
 
 
-      <div class="container">
 
-        <div id="seccion-interior">
-          <h3>Interior</h3>
-          <div class="row">
-            <div class="col-md-4">
-              <img src="images/alrededores2.jpg" class="imagen-miniatura" height="200px"class="rounded float-left" alt="...">
-            </div>
-            <div class="col-md-4">
-              <img src="images/muelle1.jpg" class = "imagen-miniatura" height="200px" class="rounded float-right" alt="...">
-            </div>
-            <div class="col-md-4">
-              <img src="images/muelle1.jpg" height="200px" class="imagen-miniatura" class="rounded float-right" alt="...">
-            </div>
-          </div>
-        </div>
-        <div id="seccion-cocina">
-          <h3>Exterior</h3>
-          <div class="row">
-            <div class="col-md-4">
-              <img src="images/alrededores2.jpg" class="imagen-miniatura" height="200px"class="rounded float-left" alt="...">
-            </div>
-            <div class="col-md-4">
-              <img src="images/muelle1.jpg" class = "imagen-miniatura" height="200px" class="rounded float-right" alt="...">
-            </div>
-            <div class="col-md-4">
-              <img src="images/muelle1.jpg" height="200px" class="imagen-miniatura" class="rounded float-right" alt="...">
-            </div>
-          </div>
-        </div>
 
-      </div>
+    </div>
+
+
+
     </body>
 </html>
