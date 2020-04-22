@@ -4,29 +4,99 @@
         <title>My Web Page!</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
-            .row > div {
-                padding: 20px;
-                background-color: teal;
-                border: 2px solid black;
-            }
+
+          body {
+            background-color: #ffffcc;
+          }
+
+          .cabania-general{
+            border-radius: 20px 40px;
+          }
+
+          .imagen-miniatura{
+            border-radius: 15px;
+          }
+
+
         </style>
+
     </head>
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    This is a section.
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    This is another section.
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    This is a third section.
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    This is a fourth section.
-                </div>
-            </div>
+      <nav class="navbar navbar-dark bg-dark" style="background-color:  #0099cc">
+        <a href="index.html">Home</a>
+      </nav>
+      <div class ="container">
+        <div class="row" style="padding-top: 10px">
+          <div class="col-md-5">
+            <img src="images/cabania-general.jpg" class="cabania-general img-fluid">
+          </div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading">La Cabaña.</h2>
+            <p class="">Esta cabaña, es un ejemplo típico de las construcciones rústicas de la isla. Hecha completamente en madera y estando elevada de la superficie para evitar daños en época de sudestadas, goza de un gran estilo.
+              Se encuentra llena de pequeños detalles de decoración que nos reconfortan la estadía.</p>
+          </div>
         </div>
+      </div>
+
+    <hr/>
+
+    <div class ="container">
+      <h2> Zonas </h2>
+      <p>Estas son las diferentes zonas en las que he categorizado la cabaña, teniendo en cuenta el interior y la parte exterior más allegada a la misma.</p>
+      <div class="row justify-content-center">
+
+        <div class="col-5">
+          <h3>Interior:</h3>
+          <ul>
+            <li>Habitación</li>
+            <li>Cocina</li>
+            <li>Living</li>
+          </ul>
+
+        </div>
+        <div class="col-5">
+           <h3>Exterior:</h3>
+           <ul>
+             <li>Zona de descanso</li>
+             <li>Zona para comer</li>
+             <li>Zona de salvavidas</li>
+           </ul>
+
+        </div>
+      </div>
+
+
+      <div class="container">
+
+        <div id="seccion-interior">
+          <h3>Interior</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="images/alrededores2.jpg" class="imagen-miniatura" height="200px"class="rounded float-left" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="images/muelle1.jpg" class = "imagen-miniatura" height="200px" class="rounded float-right" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="images/muelle1.jpg" height="200px" class="imagen-miniatura" class="rounded float-right" alt="...">
+            </div>
+          </div>
+        </div>
+        <div id="seccion-cocina">
+          <h3>Exterior</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="images/alrededores2.jpg" class="imagen-miniatura" height="200px"class="rounded float-left" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="images/muelle1.jpg" class = "imagen-miniatura" height="200px" class="rounded float-right" alt="...">
+            </div>
+            <div class="col-md-4">
+              <img src="images/muelle1.jpg" height="200px" class="imagen-miniatura" class="rounded float-right" alt="...">
+            </div>
+          </div>
+        </div>
+
+      </div>
     </body>
 </html>
