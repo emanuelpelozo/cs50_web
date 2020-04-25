@@ -1,0 +1,49 @@
+body {
+  background-color: #ffffcc;
+}
+
+
+.row > div {
+  margin-bottom: 15px;
+}
+
+.polaroid {
+  width: 70%;
+  // height: 250px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.desc-polaroid {
+  text-align: center;
+  height: 40px;
+  padding: 10px 20px;
+}
+
+
+.titular {
+  font-family: Impact;
+  font-size: 40px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.msg {
+  font-family: Times;
+  font-size: 18px;
+  font-style: oblique;
+}
+
+.img-titular {
+  border-radius: 20px 40px;
+}
+
+.img-miniatura {
+  border-radius: 15px;
+}
+
+ul{
+  font-family: Roboto;
+  font-size: 20px;
+}
