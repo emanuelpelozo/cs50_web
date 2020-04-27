@@ -41,28 +41,6 @@ $msg-font: Times;
   background-color: white;
 }
 
-//
-// .responsive {
-//   padding: 0 6px;
-//   float: left;
-//   width: 24.99999%;
-// }
-
-// @media only screen and (max-width: 700px) {
-//   .responsive {
-//     width: 49.99999%;
-//     margin: 6px 0;
-//   }
-// }
-//
-// @media only screen and (max-width: 500px) {
-//   .responsive {
-//     width: 100%;
-//   }
-// }
-
-
-
 body {
   background-color: #ffffcc;
 }
@@ -81,10 +59,6 @@ body {
   position: absolute;
   font-family: $msg-font;
   font-weight:bold;
-
-  // position: absolute;
-  // font-size: 20px;
-  // color: white;
 }
 
 .banner {
@@ -92,19 +66,43 @@ body {
   height: auto;
   opacity: 0.35;
 }
+
 .polaroid {
-  width: 70%;
+  width: 100%;
+  text-align: center;
   // height: 250px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
+  padding-top: 20px;
+
 }
 
+.verticalPolaroid {
+  @extend .polaroid;
+  img {
+    left-padding:10px;
+    height: 350px;
+    width: 80%;
+
+  }
+}
+.horizontalPolaroid {
+  @extend .polaroid;
+  img {
+    height: 280px;
+    width: 85%;
+  }
+}
+
+.top-border-polaroid {
+  height: 20px;
+}
 
 .desc-polaroid {
   text-align: center;
-  height: 40px;
-  padding: 10px 20px;
+  height: 30px;
+  padding: 5px 20px;
 }
 
 

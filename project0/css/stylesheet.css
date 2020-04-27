@@ -43,16 +43,30 @@ body {
   height: auto;
   opacity: 0.35; }
 
-.polaroid {
-  width: 70%;
+.polaroid, .verticalPolaroid, .horizontalPolaroid {
+  width: 100%;
+  text-align: center;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  padding-top: 20px; }
+
+.verticalPolaroid img {
+  left-padding: 10px;
+  height: 350px;
+  width: 80%; }
+
+.horizontalPolaroid img {
+  height: 280px;
+  width: 85%; }
+
+.top-border-polaroid {
+  height: 20px; }
 
 .desc-polaroid {
   text-align: center;
-  height: 40px;
-  padding: 10px 20px; }
+  height: 30px;
+  padding: 5px 20px; }
 
 .titular {
   font-family: Impact;
