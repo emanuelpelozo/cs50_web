@@ -1,6 +1,6 @@
 @media (max-width: 740px) {
   .center {
-    font-size: 12px;
+    font-size: 13px;
     top: 32%;
     left: 45%;
     right: -25%;
@@ -20,7 +20,8 @@ body {
 .center {
   padding-top: 20px;
   position: absolute;
-  font-family: Times; }
+  font-family: Times;
+  font-weight: bold; }
 
 .banner {
   width: 100%;

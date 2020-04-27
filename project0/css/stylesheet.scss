@@ -3,7 +3,7 @@ $msg-font: Times;
 
 @media (max-width: $breakpoint-tablet){
   .center{
-    font-size: 12px;
+    font-size: 13px;
     top: 32%;
     left: 45%;
     right: -25%;
@@ -36,7 +36,7 @@ body {
   padding-top: 20px;
   position: absolute;
   font-family: $msg-font;
-  // font-weight:;
+  font-weight:bold;
 
   // position: absolute;
   // font-size: 20px;
