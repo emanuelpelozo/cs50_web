@@ -1,3 +1,28 @@
+$breakpoint-tablet: 740px;
+$msg-font: Times;
+
+@media (max-width: $breakpoint-tablet){
+  .center{
+    font-size: 12px;
+    top: 32%;
+    left: 45%;
+    right: -25%;
+    transform: translate(-50%, -40%);
+
+  }
+}
+@media (min-width: $breakpoint-tablet){
+  .center{
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+}
+
+
+
 body {
   background-color: #ffffcc;
 }
@@ -7,6 +32,22 @@ body {
   margin-bottom: 15px;
 }
 
+.center{
+  padding-top: 20px;
+  position: absolute;
+  font-family: $msg-font;
+  // font-weight:;
+
+  // position: absolute;
+  // font-size: 20px;
+  // color: white;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  opacity: 0.35;
+}
 .polaroid {
   width: 70%;
   // height: 250px;
@@ -14,6 +55,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
 }
+
 
 .desc-polaroid {
   text-align: center;
@@ -30,7 +72,7 @@ body {
 }
 
 .msg {
-  font-family: Times;
+  font-family: $msg-font;
   font-size: 18px;
   font-style: oblique;
 }

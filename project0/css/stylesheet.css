@@ -1,8 +1,31 @@
+@media (max-width: 740px) {
+  .center {
+    font-size: 12px;
+    top: 32%;
+    left: 45%;
+    right: -25%;
+    transform: translate(-50%, -40%); } }
+@media (min-width: 740px) {
+  .center {
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); } }
 body {
   background-color: #ffffcc; }
 
 .row > div {
   margin-bottom: 15px; }
+
+.center {
+  padding-top: 20px;
+  position: absolute;
+  font-family: Times; }
+
+.banner {
+  width: 100%;
+  height: auto;
+  opacity: 0.35; }
 
 .polaroid {
   width: 70%;
