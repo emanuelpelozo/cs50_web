@@ -1,13 +1,24 @@
-$breakpoint-tablet: 740px;
+$breakpoint-phone: 600px;
+$breakpoint-tablet: 800px;
 $msg-font: Times;
 
-@media (max-width: $breakpoint-tablet){
+@media (max-width: $breakpoint-phone){
   .center{
-    font-size: 13px;
-    top: 32%;
-    left: 45%;
-    right: -25%;
-    transform: translate(-50%, -40%);
+    font-size: 12px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    right: 15px;
+
+  }
+}
+@media (min-width: $breakpoint-phone) and (max-width:$breakpoint-tablet){
+  .center{
+    font-size: 15px;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    right: 110px;
 
   }
 }
@@ -21,6 +32,9 @@ $msg-font: Times;
   }
 }
 
+body {
+  background-color: #ffffcc;
+}
 
 .gallery {
   border: 1px solid #ccc;
@@ -35,18 +49,10 @@ $msg-font: Times;
   height: auto;
 }
 
-.desc {
+.desc-image {
   padding: 15px;
   text-align: center;
   background-color: white;
-}
-
-body {
-  background-color: #ffffcc;
-}
-
-.container {
-  // padding-top: 10px;
 }
 
 
@@ -56,7 +62,7 @@ body {
 
 .center{
   padding-top: 20px;
-  position: absolute;
+  position:absolute;
   font-family: $msg-font;
   font-weight:bold;
 }
@@ -95,11 +101,7 @@ body {
   }
 }
 
-.top-border-polaroid {
-  height: 20px;
-}
-
-.desc-polaroid {
+.desc-image-polaroid {
   text-align: center;
   height: 30px;
   padding: 5px 20px;
@@ -123,11 +125,17 @@ body {
   border-radius: 20px 40px;
 }
 
-.img-miniatura {
-  border-radius: 15px;
+.card-img-top {
+  height: 225px;
 }
+
 
 ul{
   font-family: Roboto;
   font-size: 20px;
+}
+
+#cartelJumbotron{
+  background-color: #98bbcd	;
+  font-family:sans-serif;
 }

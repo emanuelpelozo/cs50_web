@@ -1,16 +1,26 @@
-@media (max-width: 740px) {
+@media (max-width: 600px) {
   .center {
-    font-size: 13px;
-    top: 32%;
-    left: 45%;
-    right: -25%;
-    transform: translate(-50%, -40%); } }
-@media (min-width: 740px) {
+    font-size: 12px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    right: 15px; } }
+@media (min-width: 600px) and (max-width: 800px) {
+  .center {
+    font-size: 15px;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    right: 110px; } }
+@media (min-width: 800px) {
   .center {
     font-size: 18px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); } }
+body {
+  background-color: #ffffcc; }
+
 .gallery {
   border: 1px solid #ccc; }
 
@@ -21,13 +31,10 @@
   width: 100%;
   height: auto; }
 
-.desc {
+.desc-image {
   padding: 15px;
   text-align: center;
   background-color: white; }
-
-body {
-  background-color: #ffffcc; }
 
 .row > div {
   margin-bottom: 15px; }
@@ -60,10 +67,7 @@ body {
   height: 280px;
   width: 85%; }
 
-.top-border-polaroid {
-  height: 20px; }
-
-.desc-polaroid {
+.desc-image-polaroid {
   text-align: center;
   height: 30px;
   padding: 5px 20px; }
@@ -82,11 +86,15 @@ body {
 .img-titular {
   border-radius: 20px 40px; }
 
-.img-miniatura {
-  border-radius: 15px; }
+.card-img-top {
+  height: 225px; }
 
 ul {
   font-family: Roboto;
   font-size: 20px; }
+
+#cartelJumbotron {
+  background-color: #98bbcd;
+  font-family: sans-serif; }
 
 /*# sourceMappingURL=stylesheet.css.map */
